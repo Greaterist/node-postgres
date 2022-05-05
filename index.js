@@ -10,7 +10,7 @@ const app = express();
 
 app.listen(PORT, () => console.log(`server started on PORT ${PORT}...`));
 
-app.use(express.json());
+app.use(express.json()); //чтобы экспресс понимал json
 
 
 app.use('/api', userRouter);
